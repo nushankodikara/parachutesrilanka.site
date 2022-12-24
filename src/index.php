@@ -83,5 +83,8 @@
 
 		<!-- Navbar and Footer Script -->
 		<script src="./js/nav.js"></script>
+
+				<!-- Login Check -->
+				<script src="./js/loginCheck.js"></script>
 	</body>
 </html>

@@ -13,8 +13,7 @@ const nav_html = `
 			<ul>
 				<li>
 					<a
-						class="active"
-						href="index.html"
+						href="index.php"
 						>Home</a
 					>
 				</li>

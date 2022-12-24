@@ -24,25 +24,31 @@
 		<!--Navbar-->
 		<nav class="navbar"></nav>
 		<div class="container">
-			<form>
+			<form
+				method="post"
+				action="./formHandlers/submitForm.php">
 				<h2>Contact Us</h2>
 				<input
 					type="text"
 					id="name"
+					name="name"
 					placeholder="Your Name"
 					required />
 				<input
 					type="email"
 					id="email"
+					name="email"
 					placeholder="Enter Email"
 					required />
 				<input
 					type="text"
 					id="phone"
+					name="phone"
 					placeholder="Enter Phone Number"
 					required />
 				<textarea
 					id="message"
+					name="message"
 					rows="4"
 					placeholder="How can we assit you"></textarea>
 				<button type="submit">Send</button>
@@ -53,5 +59,8 @@
 
 		<!-- Navbar and Footer Script -->
 		<script src="./js/nav.js"></script>
+
+		<!-- Login Check -->
+		<script src="./js/loginCheck.js"></script>
 	</body>
 </html>

@@ -1,6 +1,6 @@
 <?php
 
-include "servers.php";
+include "server.php";
 
 $conn = new mysqli($server, $username, $password, $dbname);
 
