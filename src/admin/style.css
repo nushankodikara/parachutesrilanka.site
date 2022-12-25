@@ -1,0 +1,40 @@
+form#messageSend {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    margin-top: 2em;
+    padding-top: 1em;
+    z-index: 100;
+}
+
+div#messageCol {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+div#messageCol div.card div.card-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: baseline;
+    gap:2em;
+}
+
+div#messageCol div.card div.card-body i {
+    font-size: 2em;
+}
+
+div.row {
+    min-height: 80vh;
+}

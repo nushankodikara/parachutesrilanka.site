@@ -8,13 +8,9 @@ if ($conn->connect_error) {
 	die("Connection failed: " . $conn->connect_error);
 }
 
-// get firstname from cookie
-$firstname = $_COOKIE["firstname"];
-$lastname = $_COOKIE["lastname"];
+$cname = $_GET['cname'] ?? '';
 
-$message = $_POST["message"];
-
-$sql = "INSERT INTO Chat (ChatName, SentBy, Message) VALUES ('$firstname$lastname', '$firstname', '$message')";
+$sql = "DELETE FROM Chat WHERE ChatName = '$cname'";
 
 if ($conn->query($sql) === true) {
 } else {
@@ -23,6 +19,6 @@ if ($conn->query($sql) === true) {
 
 $conn->close();
 
-header("Location: ../index.php");
+header("Location: index.php");
 
 ?>

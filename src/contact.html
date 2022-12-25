@@ -2,55 +2,34 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			http-equiv="X-UA-Compatible"
-			content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contact Us</title>
-		<link
-			rel="stylesheet"
-			href="./css/contact.css" />
+		<link rel="stylesheet" href="./css/contact.css" />
 		<!-- Navbar and footer styling -->
-		<link
-			rel="stylesheet"
-			href="./css/nav.css" />
-		<link
-			rel="stylesheet"
-			href="./css/footer.css" />
+		<link rel="stylesheet" href="./css/nav.css" />
+		<link rel="stylesheet" href="./css/footer.css" />
 	</head>
 	<body>
 		<!--Navbar-->
 		<nav class="navbar"></nav>
 		<div class="container">
-			<form
-				method="post"
-				action="./formHandlers/submitForm.php">
+			<form method="post" action="./formHandlers/submitForm.php">
 				<h2>Contact Us</h2>
 				<input
 					type="text"
 					id="name"
 					name="name"
 					placeholder="Your Name"
-					required />
-				<input
-					type="email"
-					id="email"
-					name="email"
-					placeholder="Enter Email"
-					required />
-				<input
-					type="text"
-					id="phone"
-					name="phone"
-					placeholder="Enter Phone Number"
-					required />
+					required
+					disabled
+				/>
 				<textarea
 					id="message"
 					name="message"
 					rows="4"
-					placeholder="How can we assit you"></textarea>
+					placeholder="How can we assit you?"
+				></textarea>
 				<button type="submit">Send</button>
 			</form>
 		</div>
@@ -62,5 +41,26 @@
 
 		<!-- Login Check -->
 		<script src="./js/loginCheck.js"></script>
+
+		<!-- Filling name -->
+		<script>
+			// get firstname and lastname from cookies and add to name field
+			let name = document.getElementById("name");
+			let firstname = getCookie("firstname");
+			let lastname = getCookie("lastname");
+			name.value = firstname + " " + lastname;
+
+			// get cookie function
+			function getCookie(name) {
+				let cookieArr = document.cookie.split(";");
+				for (let i = 0; i < cookieArr.length; i++) {
+					let cookiePair = cookieArr[i].split("=");
+					if (name == cookiePair[0].trim()) {
+						return decodeURIComponent(cookiePair[1]);
+					}
+				}
+				return null;
+			}
+		</script>
 	</body>
 </html>
