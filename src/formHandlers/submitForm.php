@@ -23,6 +23,8 @@ if ($conn->query($sql) === true) {
 
 $conn->close();
 
-header("Location: ../index.php");
+if (isset($_SERVER["HTTP_REFERER"])) {
+	header("Location: " . $_SERVER["HTTP_REFERER"]);
+}
 
 ?>

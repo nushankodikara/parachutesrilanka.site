@@ -23,6 +23,7 @@ const nav_html = `
 				<li><a href="FAQ.html">FAQ</a></li>
 				<li><a href="about.html">About Us</a></li>
 				<li><a href="nsbm.html">Community</a></li>
+				<li><a href="/clientArea">Client Area</a></li>
 				<li>
 					<a
 						class="ctn"
