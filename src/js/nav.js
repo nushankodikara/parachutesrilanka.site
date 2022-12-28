@@ -42,9 +42,9 @@ nav.innerHTML = nav_html;
 // Footer HTML
 
 const footer_html = `
-            <p>NSBM Green University | parachutesrilanka@gmail.com</p>
-			<p>Copyright © 2020 Parachute Sri Lanka</p>
-`;
+            <p>Copyright © 2020 Parachute Sri Lanka | parachutesrilanka@gmail.com</p>
+			
+;
 
 // Insert the HTML into the DOM section.footer
 
