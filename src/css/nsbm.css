@@ -64,8 +64,8 @@ button{
 button:hover{
     transform: scale(1.1);
     background-color: transparent;
-    border: 2px solid #ffcc74;
-    color: #ffcc74;
+    border: 2px solid #e2e82b;;
+    color: #e2e82b;;
     transition: .4s;
     cursor: pointer;
 }
