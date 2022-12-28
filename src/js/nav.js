@@ -44,7 +44,7 @@ nav.innerHTML = nav_html;
 const footer_html = `
             <p>Copyright © 2020 Parachute Sri Lanka | parachutesrilanka@gmail.com</p>
 			
-;
+`;
 
 // Insert the HTML into the DOM section.footer
 
