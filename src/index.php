@@ -85,6 +85,6 @@
 		<script src="./js/nav.js"></script>
 
 				<!-- Login Check -->
-				<script src="./js/loginCheck.js"></script>
+				<!-- <script src="./js/loginCheck.js"></script> -->
 	</body>
 </html>
