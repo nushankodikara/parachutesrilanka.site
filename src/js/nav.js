@@ -17,7 +17,7 @@ const nav_html = `
 						>Home</a
 					>
 				</li>
-				<li><a href="Guideline.html">Guidlines</a></li>
+				<li><a href="Guidelines.html">Guidlines</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
 				<li><a href="login.html">Log In</a></li>
 				<li><a href="FAQ.html">FAQ</a></li>
